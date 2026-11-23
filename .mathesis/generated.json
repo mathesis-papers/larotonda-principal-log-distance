@@ -18,19 +18,19 @@
   "generator_version": "0.1.0",
   "sha256": {
     "CHANGELOG.md": "b795ba31c4c1cae71e130ea489652408cb7fa0349cf5a527493d5823a076858e",
-    "CITATION.cff": "97e1ad7710b8e00384c452246cbf45d29ae346e7a8ab960be4f56ced38111c52",
+    "CITATION.cff": "7836fb70fd6d6c175c8254d9d9de4f4a599a2fad2f5fe7ecdf9233dcc56a8370",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
-    "README.md": "c2a28b4be8553e0c9af3262ce7091814d12f6bb07e61b1dabd3b5e8d2fd31a10",
+    "README.md": "7ebaa7b297e8bbbb2394cca7a262caa798628e9620a261090feb237b4b442580",
     "formalization/nodes.json": "df0ca2fd8f0f1fc1c52f50ccac8001be1a1cf7142b561ca856cba32497cd40b2",
     "manuscript/larotonda-principal-log-distance/README.md": "9c6ad1450194fef8b9607b2a2e6c1a8f0e889acdbedf8bfefbebbe21260d3dd9",
     "manuscript/larotonda-principal-log-distance/checks.json": "fc660d8b1a1c6083b41a39cf63f6149d9693f8397f7235570c64a554d3f967c5",
     "manuscript/larotonda-principal-log-distance/metadata.json": "9125910fddbc20100739128510589e748fff77952bf6ee01881da0a73e81d19e",
     "manuscript/larotonda-principal-log-distance/note.tex": "f06635eeb0e531b7ab25e89e281922aecf54f9e27fa3c28109a2f80826bbfac8",
     "manuscript/larotonda-principal-log-distance/verify.py": "510c7c815bfdc644be819e0e2e279114f79d327a29f727ec5d9301577fe0a5fb",
-    "paper.json": "6c4db8639c1ee563b78b14075e24473fe881a80150f0d312325f8b9711b8cc9f",
+    "paper.json": "ebdd7ab1a8dbfc309cf6d9d29edd7ea863511506ebd435b183830856ce4731f6",
     "paper.pdf": "9cb660db6c01e4c879c51e7d6ad10fc6a7ecaeae577cb392cb30bc95946ca534",
     "source.archive": "ce40c1aa6359d28c5395d4b4f8d636663bca9032a10be0771f33bbfd29a3ad91"
   },
-  "snapshot_identity": "61f239b5a3363df0a9c25c2468d27d92baf9c54f6084d50567d7eeca2b29f1d5"
+  "snapshot_identity": "db1a60322724d1d95486d64cd473bbd93935ef95aefdd2979ef38610ce801a0b"
 }
