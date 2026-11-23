@@ -1,0 +1,84 @@
+{
+  "arithmetic": "Exact fractions; angles in units of pi and squared norms in units of pi^2; no rounding.",
+  "circle": {
+    "angle_grid": "Integers -8 through 8 divided by 8",
+    "cases": 289,
+    "scope": "Absolute-angle comparisons on the circle.",
+    "winding_range": [
+      -8,
+      8
+    ]
+  },
+  "coverage": "Finite coefficient, periodicity and winding comparisons. General norm admissibility and curve-length identities have written proofs in note.tex.",
+  "dimension_family": {
+    "cases": 62,
+    "coefficient": 4,
+    "dimensions": [
+      3,
+      64
+    ],
+    "scope": "Equal angles 2/n and one winding shift."
+  },
+  "family": {
+    "cases": 56,
+    "coefficients_per_dimension": 8,
+    "dimensions": [
+      2,
+      8
+    ],
+    "scope": "Three negative and five positive rational coefficients in each dimension."
+  },
+  "fixed_dimension_obstruction": {
+    "cases": 124,
+    "dimensions": [
+      2,
+      32
+    ],
+    "scope": "Four radius margins per dimension, with the displayed constructive coefficient bound."
+  },
+  "frobenius": {
+    "cases": 1225,
+    "scope": "Five angles per coordinate in [-1,1], and winding integers -3 through 3, dimension two."
+  },
+  "scalar_threshold": {
+    "cases": 372,
+    "dimensions": [
+      2,
+      32
+    ],
+    "scope": "Four positive coefficients; below, at, and above the scalar one-shift threshold."
+  },
+  "status": "PASS",
+  "three_dimensional": {
+    "angles": [
+      "2/5",
+      "2/5",
+      "2/5"
+    ],
+    "coefficient": 4,
+    "competitor_squared": "136/25",
+    "principal_squared": "156/25",
+    "shifted_angles": [
+      "-8/5",
+      "2/5",
+      "2/5"
+    ]
+  },
+  "two_dimensional": {
+    "angles": [
+      "4/5",
+      "1/2"
+    ],
+    "coefficient": 4,
+    "competitor_squared": "73/20",
+    "principal_squared": "153/20",
+    "shifted_angles": [
+      "-6/5",
+      "1/2"
+    ]
+  },
+  "winding_identity": {
+    "cases": 48,
+    "scope": "Specified rational two-angle grid."
+  }
+}

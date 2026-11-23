@@ -1,0 +1,333 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\U}{\mathrm U}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\op}{\mathrm{op}}
+\newcommand{\HS}{\mathrm{HS}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Trace-coupled counterexamples to Larotonda's\texorpdfstring{\\}{} principal-log distance conjecture:\texorpdfstring{\\}{} beyond the Antezana--Larotonda--Varela theorem}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{16 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Beyond the unitarily invariant theorem of Antezana, Larotonda and Varela
+(2011/2014; \cite[Theorem~4.3]{ALV}), Larotonda's conjecture
+after Proposition 4.3 in Section 4.1, p.~7 of
+\emph{Short curves in homogeneous spaces of the unitary group for unitarily
+invariant norms} (arXiv:2610.31535v1) fails for a normalized, symmetric
+Ad-invariant quadratic norm on $\mathfrak u(2)$: shifting one eigenangle
+by $2\pi$ preserves the endpoint and gives a shorter exponential curve.
+For the full positive-definite family obtained by adding $c$ times
+the squared trace to the Hilbert--Schmidt norm squared, we show in every
+dimension $n\geq2$ that principal-log minimality holds for all
+principal angles if and only if the trace coefficient is zero.
+Scalar examples give a strict failure whenever their eigenangle exceeds
+$\pi(1+c)/(1+nc)$, for $c>0$.
+Thus the proposed $\pi/2$ input already fails in dimension three,
+and no positive dimension-independent spectral radius suffices.
+\end{abstract}
+
+\section{The question and the quadratic family}
+Write $\U(n)=\{u\in M_n(\mathbb C):u^*u=I\}$ and
+$\mathfrak u(n)=\{z\in M_n(\mathbb C):z^*=-z\}$.
+For a symmetric norm $F$ on this real vector space, assume
+\[
+ F(uzu^*)=F(z)\quad(u\in\U(n)),\qquad \|z\|_{\op}\leq F(z).
+\]
+Here $\|\cdot\|_{\op}$ is the Euclidean operator norm.
+For a piecewise smooth curve $\gamma:[0,1]\to\U(n)$ put
+\[
+ L_F(\gamma)=\int_0^1F(\gamma(t)^*\dot\gamma(t))\,dt,
+ \qquad d_F(u,v)=\inf_{\gamma(0)=u,\,\gamma(1)=v}L_F(\gamma).
+\]
+The conjecture in \cite[Section 4.1, p.~7, after Proposition 4.3]{Larotonda}
+is refuted below, even within this class of symmetric norms. It asserts
+\begin{equation}\label{eq:conjecture}
+ d_F(I,e^z)=F(z)\qquad (z\in\mathfrak u(n),\ \|z\|_{\op}\leq\pi).
+\end{equation}
+Its stated class also allows nonsymmetric Finsler norms, so a symmetric
+counterexample suffices.
+
+The distinction from singular-value invariance is essential.
+Antezana, Larotonda and Varela prove \eqref{eq:conjecture} for unitarily
+invariant norms \cite[preprint Theorem 4.3]{ALV}.
+Russell and Stepney discuss minimization over logarithm branches in a
+quantum-control setting and the sufficient role of eigenvalue-modulus
+monotonicity \cite[Section 4, after equation (11)]{RS}.
+Here the obstruction is the trace, which depends on signed eigenangles,
+not just singular values. Local minimizing-segment results for general
+Ad-invariant norms, such as \cite[Theorem 4.11]{Metric} and
+\cite[Corollary 2.17]{LR}, concern a ball in
+the chosen Finsler norm and do not assert the spectral-radius bound
+in \eqref{eq:conjecture}.
+
+The eigenangle-convexity results of Larotonda and Miglioli
+\cite[Theorems 4.2 and 5.9]{LM} supply a different ingredient:
+convexity along segments whose principal logarithms remain in the
+spectral ball of radius $\pi/2$.
+
+Let $n\geq1$ and $c>-1/n$. For Hermitian $H$ define
+\begin{equation}\label{eq:norm}
+ Q_c(H)=\tr(H^2)+c(\tr H)^2,\qquad
+ s_{n,c}=\frac1{\sqrt{\min\{1,1+nc\}}},\qquad
+ F_c(iH)=s_{n,c}\sqrt{Q_c(H)}.
+\end{equation}
+Every skew-Hermitian matrix has a unique expression $iH$ with $H$ Hermitian.
+The Hilbert--Schmidt norm is $\|H\|_{\HS}=\sqrt{\tr(H^2)}$.
+Writing $H_0=H-(\tr H)I/n$, one obtains
+\begin{equation}\label{eq:split}
+ Q_c(H)=\tr(H_0^2)+(1/n+c)(\tr H)^2.
+\end{equation}
+This is a positive-definite real quadratic form precisely when $c>-1/n$.
+It defines a norm by its associated inner product, and conjugation
+preserves both terms in \eqref{eq:norm}.
+For $c\geq0$, $Q_c(H)\geq\|H\|_{\HS}^2$.
+For $c<0$, Cauchy--Schwarz gives $(\tr H)^2\leq n\tr(H^2)$, whence
+$Q_c(H)\geq(1+nc)\|H\|_{\HS}^2$.
+Thus $F_c(iH)\geq\|H\|_{\HS}\geq\|H\|_{\op}$ in both cases.
+This verifies all the stated norm hypotheses.
+
+\section{A shorter logarithm in every nonzero case}
+\begin{theorem}\label{thm:family}
+Let $n\geq2$ and $-1/n<c\ne0$. Define
+\begin{gather*}
+ \varepsilon=\frac{|c|}{4(1+c)},\quad
+ a=\pi(1-\varepsilon),\quad b=\frac{\pi}{2}\operatorname{sgn}(c),\\
+ H=\diag(a,b,0,\ldots,0),\quad
+ H'=\diag(a-2\pi,b,0,\ldots,0).
+\end{gather*}
+Then $\|iH\|_{\op}<\pi$, $e^{iH'}=e^{iH}$, and
+\begin{equation}\label{eq:strict}
+ d_{F_c}(I,e^{iH})\leq F_c(iH')<F_c(iH).
+\end{equation}
+Consequently, within the family \eqref{eq:norm},
+\eqref{eq:conjecture} holds for every admissible $z$ if and only if $c=0$.
+\end{theorem}
+\begin{proof}
+The denominator $1+c$ is positive. For $c>0$,
+$0<\varepsilon<1/4$. For $c<0$, put $d=-c$; then
+$0<d<1/n\leq1/2$, so
+$\varepsilon=d/(4(1-d))<1/4$ again.
+Hence $3\pi/4<a<\pi$ and $|b|=\pi/2$, proving the operator-norm bound.
+The two diagonal exponentials agree because their first eigenangles
+differ by $2\pi$.
+
+For arbitrary real angles $\theta_1,\ldots,\theta_n$, set
+$T=\sum_j\theta_j$ and $D=\diag(\theta_1,\ldots,\theta_n)$.
+Replacing $\theta_1$ by $\theta_1-2\pi$ gives a diagonal matrix $D'$ with
+\begin{align}\label{eq:gap}
+ Q_c(D')-Q_c(D)
+ &=(-4\pi\theta_1+4\pi^2)
+     +c(-4\pi T+4\pi^2)\notag\\
+ &=4\pi\big((\pi-\theta_1)+c(\pi-T)\big).
+\end{align}
+For $D=H$, $T=a+b$, so the expression in parentheses is
+\[
+ (1+c)\pi\varepsilon-cb
+ =\frac{\pi|c|}{4}-\frac{\pi|c|}{2}
+ =-\frac{\pi|c|}{4}.
+\]
+It follows that $Q_c(H')-Q_c(H)=-\pi^2|c|<0$.
+Positive scaling and taking square roots preserve this strict inequality.
+
+The smooth unitary curve $\gamma(t)=e^{itH'}$ has
+$\gamma(0)=I$, $\gamma(1)=e^{iH}$ and
+$\gamma(t)^*\dot\gamma(t)=iH'$.
+Its constant speed gives $L_{F_c}(\gamma)=F_c(iH')$, proving
+\eqref{eq:strict}. Finally $c=0$ is exactly the Hilbert--Schmidt norm,
+for which \eqref{eq:conjecture} is the cited theorem of
+Antezana, Larotonda and Varela. This proves the asserted equivalence.
+\end{proof}
+
+For the concrete two-dimensional choice $c=4$ the scale in
+\eqref{eq:norm} is $1$, and the theorem reads
+\begin{equation}\label{eq:main-example}
+ H=\pi\diag(4/5,1/2),\quad H'=\pi\diag(-6/5,1/2),\quad
+ \begin{cases}
+ F_4(iH)^2=153\pi^2/20,\\
+ F_4(iH')^2=73\pi^2/20.
+ \end{cases}
+\end{equation}
+Indeed the two Hilbert--Schmidt squared terms are $89\pi^2/100$
+and $169\pi^2/100$, while the squared-trace contributions are
+$676\pi^2/100$ and $196\pi^2/100$.
+Thus the increased Hilbert--Schmidt term is more than offset by the
+decrease in the trace term. For $c\ne0$, take two diagonal Hermitian
+matrices whose first two entries are $(1,1)$ and $(1,-1)$, respectively,
+and whose other entries are zero. They have the same singular values but
+distinct $F_c$-norms after multiplication by $i$.
+Thus $F_c$ is not unitarily invariant in the stronger sense
+required in \cite{ALV}.
+
+\section{Scalar examples and the smaller-radius input}
+Section 4.1 of \cite{Larotonda} conditionally proposes using
+principal-log minimality for $\|z\|_{\op}<\pi/2$ to extend its quotient
+argument. This is not a separately asserted theorem.
+The same winding identity shows that the proposed input fails.
+\begin{corollary}\label{cor:scalar}
+Let $n\geq2$, $c>0$, and let $P=\diag(1,0,\ldots,0)$.
+For
+\[
+ \frac{\pi(1+c)}{1+nc}<\theta<\pi,\qquad
+ H_\theta=\theta I,\qquad H_\theta'=H_\theta-2\pi P,
+\]
+one has $e^{iH_\theta'}=e^{iH_\theta}$ and
+$d_{F_c}(I,e^{iH_\theta})<F_c(iH_\theta)$.
+For every fixed $n\geq2$ and every $r>\pi/n$, there are $c>0$
+and such a counterexample with $\|iH_\theta\|_{\op}<r$.
+\end{corollary}
+\begin{proof}
+Formula \eqref{eq:gap}, with $T=n\theta$, gives
+\[
+ Q_c(H_\theta')-Q_c(H_\theta)
+ =4\pi\big(\pi(1+c)-\theta(1+nc)\big)<0.
+\]
+The exponentials agree by periodicity; the shorter exponential curve
+gives the distance inequality as in Theorem~\ref{thm:family}.
+For the last assertion choose $\pi/n<\theta<\min\{r,\pi\}$ and then
+\[
+ c>\frac{\pi-\theta}{n\theta-\pi}>0.
+\]
+This is exactly the displayed strict inequality. At
+$\theta=\pi(1+c)/(1+nc)$ the two displayed logarithms have equal norm;
+no distance formula is inferred from that equality.
+\end{proof}
+
+\begin{corollary}\label{cor:half}
+Principal-log minimality for the full normalized Ad-invariant class
+fails even when $\|z\|_{\op}<\pi/2$. In dimension three take $c=4$ and
+\[
+ H=\pi\diag(2/5,2/5,2/5),\qquad H'=\pi\diag(-8/5,2/5,2/5).
+\]
+Then
+\[
+ \|iH\|_{\op}=2\pi/5<\pi/2,\qquad
+ F_4(iH)^2=156\pi^2/25,\quad
+ F_4(iH')^2=136\pi^2/25,
+\]
+and $d_{F_4}(I,e^{iH})<F_4(iH)$.
+Moreover, no positive spectral radius independent of dimension makes
+principal-log minimality valid for all the norms $F_4$.
+\end{corollary}
+\begin{proof}
+The displayed values follow by summing the squares of the diagonal
+entries and four times the square of their sum. Endpoint equality and
+the shorter curve are as in Theorem~\ref{thm:family}.
+For the last assertion, for each $n\geq3$ put
+$H_n=(2\pi/n)I$ and $H_n'=H_n-2\pi P$, with $P$ a rank-one
+diagonal projection. Formula \eqref{eq:gap}, with $T=2\pi$, gives
+\[
+ Q_4(H_n')-Q_4(H_n)=-4\pi^2(3+2/n)<0.
+\]
+Meanwhile $\|iH_n\|_{\op}=2\pi/n\to0$. For any proposed
+radius $r>0$, choose $n>2\pi/r$ to obtain a counterexample with
+operator norm less than $r$.
+\end{proof}
+
+In dimension one, write $F_c(i\theta)=a|\theta|$ with $a>0$.
+A piecewise smooth circle curve from $1$ to $e^{i\theta}$ has a real
+angle lift starting at $0$ and ending at $\theta+2\pi k$ for some integer
+$k$. Its length is at least $a|\theta+2\pi k|\geq a|\theta|$ when
+$|\theta|\leq\pi$; the curve $e^{it\theta}$ attains this bound.
+Thus \eqref{eq:conjecture} holds in dimension one for this family.
+
+On the trace-zero subspace, $F_c$ is a positive multiple of the
+Hilbert--Schmidt norm. If $H$ is trace zero, the competitor
+$e^{it(H-2\pi P)}$ has determinant $e^{-2\pi it}$ and does not stay in
+$\mathrm{SU}(n)$. The winding construction therefore does not give a
+competitor in the special-unitary setting of \cite[Theorem 4.1]{Larotonda}.
+The results above do not assert an exact global distance for the
+counterexamples, or a classification of all Ad-invariant norms.
+
+\section{Coverage and verification}
+\begin{center}\small
+\begin{tabular}{@{}p{.48\linewidth}p{.45\linewidth}@{}}
+\toprule
+Source item & Coverage\\
+\midrule
+\cite{Larotonda}, Section 4.1, conjecture after Proposition 4.3
+& Refuted (explicit counterexample), \eqref{eq:main-example} and Theorem~\ref{thm:family}.\\[3pt]
+\cite{Larotonda}, Section 4.1, proposed input for spectral radius $\pi/2$
+& Not asserted in the source; fails for the $\U(3)$ example in Corollary~\ref{cor:half}.\\[3pt]
+Scalar threshold, fixed-dimension radius obstruction, and absence of a dimension-independent radius
+& Not posed; obstructions proved in Corollaries~\ref{cor:scalar} and~\ref{cor:half}.\\[3pt]
+\cite{Larotonda}, Theorem 2.1; trace family with $c=0$
+& Prior proof cited: Antezana--Larotonda--Varela (2011/2014), \cite[Theorem 4.3]{ALV}; used in Theorem~\ref{thm:family}.\\[3pt]
+Dimension-one trace family and trace-zero restriction
+& Not posed; the circle case is proved above, and the trace term vanishes on $\mathfrak{su}(n)$.\\[3pt]
+\cite{Larotonda}, Proposition 4.3; Theorems 1.1 and 4.1
+& Not covered: segment convexity and the stated quotient theorems concern different assertions.\\[3pt]
+\cite{Larotonda}, Remarks 5.4 and 5.5
+& Not covered: uniqueness in quotients and infinite-dimensional extension.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Verification scope.}
+In the pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/a89e0fb9ba0f9002502ec8125455c2c2a9281443/D5/S3/QuadraticForms/LarotondaPrincipalLogDistanceRefutation.lean}{Lean source},
+the declaration \texttt{result}, of type $\neg\,\texttt{claim}$, belongs to
+the namespace
+\begin{quote}\small\ttfamily
+D5.S3.QuadraticForms.\\
+LarotondaPrincipalLogDistanceRefutation.
+\end{quote}
+Here \texttt{claim} is the universal normalized Ad-invariant Finsler-norm
+assertion \eqref{eq:conjecture} on skew-adjoint matrices, with piecewise
+smooth unitary competitors. The declaration uses the
+two-dimensional $c=4$ norm, endpoint and strict-inequality construction
+in \eqref{eq:main-example}; it does not state the whole parameter-family
+classification or Corollaries~\ref{cor:scalar} and~\ref{cor:half}.
+Those conclusions have the written proofs above.
+The accompanying \texttt{verify.py} gives exact rational finite checks
+of the displayed coefficients and winding comparisons.
+
+\begin{thebibliography}{9}
+\bibitem{Larotonda}
+G. Larotonda, \emph{Short curves in homogeneous spaces of the unitary
+group for unitarily invariant norms}, arXiv:2610.31535v1 (2026),
+\href{https://arxiv.org/abs/2610.31535v1}{arXiv:2610.31535v1}.
+
+\bibitem{ALV}
+J. Antezana, G. Larotonda and A. Varela,
+\emph{Optimal paths for symmetric actions in the unitary group},
+Communications in Mathematical Physics \textbf{328} (2014), 481--497,
+\href{https://doi.org/10.1007/s00220-014-2041-x}{doi:10.1007/s00220-014-2041-x};
+\href{https://arxiv.org/abs/1107.2439v1}{arXiv:1107.2439v1} (2011).
+
+\bibitem{RS}
+B. Russell and S. Stepney,
+\emph{The geometry of speed limiting resources in physical models of computation},
+International Journal of Foundations of Computer Science \textbf{28} (2017), 321--333,
+\href{https://doi.org/10.1142/S0129054117500204}{doi:10.1142/S0129054117500204};
+\href{https://arxiv.org/abs/1611.09220}{arXiv:1611.09220}.
+
+\bibitem{LR}
+G. Larotonda and I. Rey, \emph{Lie groups with a bi-invariant distance},
+arXiv:2511.09699v2 (2025),
+\href{https://arxiv.org/abs/2511.09699v2}{arXiv:2511.09699v2}.
+
+\bibitem{LM}
+G. Larotonda and M. Miglioli, \emph{Convexity of sums of eigenvalues of a
+segment of unitaries}, arXiv:2408.16906v1 (2024),
+\href{https://arxiv.org/abs/2408.16906v1}{arXiv:2408.16906v1}.
+
+\bibitem{Metric}
+G. Larotonda, \emph{Metric geometry of infinite-dimensional Lie groups
+and their homogeneous spaces}, Forum Mathematicum \textbf{31} (2019),
+1567--1605,
+\href{https://doi.org/10.1515/forum-2019-0127}{doi:10.1515/forum-2019-0127};
+\href{https://arxiv.org/abs/1805.02631v4}{arXiv:1805.02631v4}.
+\end{thebibliography}
+\paragraph{License.} \copyright\ 2026 Haobo Ma and Wenlin Zhang.
+This work is licensed under
+\href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+\end{document}

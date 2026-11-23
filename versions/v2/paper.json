@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 76190,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "9cb660db6c01e4c879c51e7d6ad10fc6a7ecaeae577cb392cb30bc95946ca534",
+      "sha256": "9cb660db6c01e4c879c51e7d6ad10fc6a7ecaeae577cb392cb30bc95946ca534"
+    },
+    "source": {
+      "bytes": 12226,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "ce40c1aa6359d28c5395d4b4f8d636663bca9032a10be0771f33bbfd29a3ad91",
+      "sha256": "ce40c1aa6359d28c5395d4b4f8d636663bca9032a10be0771f33bbfd29a3ad91"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Beyond the unitarily invariant theorem of Antezana, Larotonda and Varela (2011/2014; Theorem 4.3 of arXiv:1107.2439v1), Larotonda's conjecture after Proposition 4.3 in Section 4.1, p. 7 of Short curves in homogeneous spaces of the unitary group for unitarily invariant norms (arXiv:2610.31535v1) fails for a normalized, symmetric Ad-invariant quadratic norm on u(2): shifting one eigenangle by 2 pi preserves the endpoint and gives a shorter exponential curve. For the full positive-definite family obtained by adding c times the squared trace to the Hilbert-Schmidt norm squared, we show in every dimension at least two that principal-log minimality holds for all principal angles if and only if the trace coefficient is zero. Scalar examples give a strict failure whenever their eigenangle exceeds pi(1+c)/(1+nc), for c>0. Thus the proposed pi/2 input already fails in dimension three, and no positive dimension-independent spectral radius suffices.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "a89e0fb9ba0f9002502ec8125455c2c2a9281443",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/a89e0fb9ba0f9002502ec8125455c2c2a9281443/D5/S3/QuadraticForms/LarotondaPrincipalLogDistanceRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 76190,
+      "sha256": "9cb660db6c01e4c879c51e7d6ad10fc6a7ecaeae577cb392cb30bc95946ca534",
+      "url": "/api/v1/collected-papers/larotonda-principal-log-distance/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T17:07:20.643355476Z",
+    "record": "larotonda-principal-log-distance",
+    "repository_name": "larotonda-principal-log-distance",
+    "source": {
+      "bytes": 12226,
+      "sha256": "ce40c1aa6359d28c5395d4b4f8d636663bca9032a10be0771f33bbfd29a3ad91",
+      "url": "/api/v1/collected-papers/larotonda-principal-log-distance/files/source?version=2"
+    },
+    "title": "Trace-coupled counterexamples to Larotonda's principal-log distance conjecture: beyond the Antezana-Larotonda-Varela theorem",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T17:07:20.643355476Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "larotonda-principal-log-distance"
+  }
+}

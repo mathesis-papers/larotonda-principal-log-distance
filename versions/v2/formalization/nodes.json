@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:larotonda-principal-log-distance:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "a89e0fb9ba0f9002502ec8125455c2c2a9281443",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a89e0fb9ba0f9002502ec8125455c2c2a9281443/D5/S3/QuadraticForms/LarotondaPrincipalLogDistanceRefutation.lean"
+      },
+      "lineage": "collected:larotonda-principal-log-distance:s1",
+      "macros": {
+        "\\HS": "\\mathrm{HS}",
+        "\\U": "\\mathrm U",
+        "\\diag": "\\operatorname{diag}",
+        "\\op": "\\mathrm{op}",
+        "\\tr": "\\operatorname{tr}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "larotonda-principal-log-distance",
+      "scope": "in_scope",
+      "statement": "Let $n\\geq2$ and $-1/n<c\\ne0$. Define\n\\begin{gather*}\n \\varepsilon=\\frac{|c|}{4(1+c)},\\quad\n a=\\pi(1-\\varepsilon),\\quad b=\\frac{\\pi}{2}\\operatorname{sgn}(c),\\\\\n H=\\diag(a,b,0,\\ldots,0),\\quad\n H'=\\diag(a-2\\pi,b,0,\\ldots,0).\n\\end{gather*}\nThen $\\|iH\\|_{\\op}<\\pi$, $e^{iH'}=e^{iH}$, and\n\\begin{equation}\n d_{F_c}(I,e^{iH})\\leq F_c(iH')<F_c(iH).\n\\end{equation}\nConsequently, within the family \\eqref{eq:norm},\n\\eqref{eq:conjecture} holds for every admissible $z$ if and only if $c=0$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Trace-coupled counterexamples to Larotonda's principal-log distance conjecture: beyond the Antezana-Larotonda-Varela theorem",
+      "toolchain": null,
+      "version": 2,
+      "work": "larotonda-principal-log-distance"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:larotonda-principal-log-distance:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a89e0fb9ba0f9002502ec8125455c2c2a9281443",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a89e0fb9ba0f9002502ec8125455c2c2a9281443/D5/S3/QuadraticForms/LarotondaPrincipalLogDistanceRefutation.lean"
+      },
+      "lineage": "collected:larotonda-principal-log-distance:s2",
+      "macros": {
+        "\\HS": "\\mathrm{HS}",
+        "\\U": "\\mathrm U",
+        "\\diag": "\\operatorname{diag}",
+        "\\op": "\\mathrm{op}",
+        "\\tr": "\\operatorname{tr}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "larotonda-principal-log-distance",
+      "scope": "in_scope",
+      "statement": "Let $n\\geq2$, $c>0$, and let $P=\\diag(1,0,\\ldots,0)$.\nFor\n\\[\n \\frac{\\pi(1+c)}{1+nc}<\\theta<\\pi,\\qquad\n H_\\theta=\\theta I,\\qquad H_\\theta'=H_\\theta-2\\pi P,\n\\]\none has $e^{iH_\\theta'}=e^{iH_\\theta}$ and\n$d_{F_c}(I,e^{iH_\\theta})<F_c(iH_\\theta)$.\nFor every fixed $n\\geq2$ and every $r>\\pi/n$, there are $c>0$\nand such a counterexample with $\\|iH_\\theta\\|_{\\op}<r$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Trace-coupled counterexamples to Larotonda's principal-log distance conjecture: beyond the Antezana-Larotonda-Varela theorem",
+      "toolchain": null,
+      "version": 2,
+      "work": "larotonda-principal-log-distance"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:larotonda-principal-log-distance:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "a89e0fb9ba0f9002502ec8125455c2c2a9281443",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/a89e0fb9ba0f9002502ec8125455c2c2a9281443/D5/S3/QuadraticForms/LarotondaPrincipalLogDistanceRefutation.lean"
+      },
+      "lineage": "collected:larotonda-principal-log-distance:s3",
+      "macros": {
+        "\\HS": "\\mathrm{HS}",
+        "\\U": "\\mathrm U",
+        "\\diag": "\\operatorname{diag}",
+        "\\op": "\\mathrm{op}",
+        "\\tr": "\\operatorname{tr}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "larotonda-principal-log-distance",
+      "scope": "in_scope",
+      "statement": "Principal-log minimality for the full normalized Ad-invariant class\nfails even when $\\|z\\|_{\\op}<\\pi/2$. In dimension three take $c=4$ and\n\\[\n H=\\pi\\diag(2/5,2/5,2/5),\\qquad H'=\\pi\\diag(-8/5,2/5,2/5).\n\\]\nThen\n\\[\n \\|iH\\|_{\\op}=2\\pi/5<\\pi/2,\\qquad\n F_4(iH)^2=156\\pi^2/25,\\quad\n F_4(iH')^2=136\\pi^2/25,\n\\]\nand $d_{F_4}(I,e^{iH})<F_4(iH)$.\nMoreover, no positive spectral radius independent of dimension makes\nprincipal-log minimality valid for all the norms $F_4$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Trace-coupled counterexamples to Larotonda's principal-log distance conjecture: beyond the Antezana-Larotonda-Varela theorem",
+      "toolchain": null,
+      "version": 2,
+      "work": "larotonda-principal-log-distance"
+    }
+  ]
+}

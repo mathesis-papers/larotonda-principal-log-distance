@@ -1,0 +1,15 @@
+{
+  "id": "larotonda-principal-log-distance",
+  "revision": 2,
+  "problem_ids": ["larotonda-principal-log-distance"],
+  "topic": "Principal-log distance minimality for normalized Ad-invariant norms on the unitary Lie algebra",
+  "title": "Trace-coupled counterexamples to Larotonda's principal-log distance conjecture: beyond the Antezana-Larotonda-Varela theorem",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Beyond the unitarily invariant theorem of Antezana, Larotonda and Varela (2011/2014; Theorem 4.3 of arXiv:1107.2439v1), Larotonda's conjecture after Proposition 4.3 in Section 4.1, p. 7 of Short curves in homogeneous spaces of the unitary group for unitarily invariant norms (arXiv:2610.31535v1) fails for a normalized, symmetric Ad-invariant quadratic norm on u(2): shifting one eigenangle by 2 pi preserves the endpoint and gives a shorter exponential curve. For the full positive-definite family obtained by adding c times the squared trace to the Hilbert-Schmidt norm squared, we show in every dimension at least two that principal-log minimality holds for all principal angles if and only if the trace coefficient is zero. Scalar examples give a strict failure whenever their eigenangle exceeds pi(1+c)/(1+nc), for c>0. Thus the proposed pi/2 input already fails in dimension three, and no positive dimension-independent spectral radius suffices.",
+  "summary": "A complete written winding-shift proof refutes principal-log distance minimality for every nonzero admissible trace coefficient c>-1/n in dimensions n>=2; the c=0 case is the cited Antezana-Larotonda-Varela theorem. For c>0, scalar eigenangles above pi(1+c)/(1+nc) give shorter logarithms. In each fixed dimension n>=2, any radius r>pi/n admits a counterexample for some c>0. The explicit U(3), c=4 example has spectral norm 2pi/5<pi/2 and squared lengths 156pi^2/25 and 136pi^2/25. No positive dimension-independent radius suffices, even with c=4. The linked Lean declaration covers only the U(2), c=4 refutation; the other conclusions have written proofs and exact rational finite checks of explicit coefficients.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/a89e0fb9ba0f9002502ec8125455c2c2a9281443/D5/S3/QuadraticForms/LarotondaPrincipalLogDistanceRefutation.lean"
+}
